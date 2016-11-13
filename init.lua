@@ -130,6 +130,7 @@ function expose(rule, s)
         awful.tag.history.restore()
 	awful.tag.setscreen(t, nil)
         t.selected = false
+	awful.tag.delete(t)
         capi.keygrabber.stop()
         capi.mousegrabber.stop()
 
